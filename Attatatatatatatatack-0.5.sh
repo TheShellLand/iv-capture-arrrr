@@ -173,7 +173,7 @@ echo -e "\tESSID: $essid"
 echo
 echo "From scan:"
 #echo -e "\t`grep -E "$bssid.*^BSS" $tmp/iwscan`"
-echo -e "\t`grep -E "$bssid" $tmp/iwscan`\v\v"
+echo -e "\t`grep -E -A9 "$bssid" $tmp/iwscan`\v\v"
 #echo; echo "Do the selection match ? "
 #select yn in "Yes" "No"; do
 #case $yn in
